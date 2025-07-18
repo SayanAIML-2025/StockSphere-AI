@@ -7,9 +7,9 @@ from pydantic import BaseModel
 from crewai.flow import Flow, listen, start
 from src.utils.intent import Intent
 
-from src.orchestration_agent.crews.orchestrator_flow.inventory_agent import CrewInvAgent
-from src.orchestration_agent.crews.orchestrator_flow.sourcing_agent import CrewSrcAgent
-from src.orchestration_agent.crews.orchestrator_flow.query_assistant_agent import CrewQryAgent
+from src.orchestration_agent.crews.orchestrator_flow.Purchasing_Agent import CrewInvAgent
+from src.orchestration_agent.crews.orchestrator_flow.Supplier_Selection_Agent import CrewSrcAgent
+from src.orchestration_agent.crews.orchestrator_flow.nventory_Analyst import CrewQryAgent
 
 
 class OrchState(BaseModel):
