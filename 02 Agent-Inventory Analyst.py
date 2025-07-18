@@ -6,7 +6,7 @@ from crewai import LLM
 from crewai import Agent, Crew, Process, Task, LLM
 
 from dotenv import load_dotenv
-from src.orchestration_agent.tools.query_tools import POCreationTool
+from src.orchestration_agent.tools.query_tools import InventoryAnalysisTool
 
 load_dotenv()
 
@@ -26,7 +26,7 @@ class CrewQryAgent():
             role="Inventory Data Analyst",
             goal="Analyze inventory and forecast data to provide factual answers about raw materials status",
             backstory="You're a data analyst specializing in inventory management. Your job is to analyze the raw materials inventory data and forecast data, and provide factual information  about the status of materials. You focus on identifying surpluses, shortages, and exact matches between current inventory and forecasted requirements.",
-            tools=[QueryInventoryTool()],
+            tools=[InventoryAnalysisTool()],
             verbose=False, #self.qry_agent_config['verbose'],
             llm = self.llm,
             max_iter = 20, # Maximum iterations before the agent must provide its best answer.
