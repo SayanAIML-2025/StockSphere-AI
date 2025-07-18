@@ -6,7 +6,7 @@ from crewai import LLM
 from crewai import Agent, Crew, Process, Task, LLM
 
 from dotenv import load_dotenv
-from src.orchestration_agent.tools.query_tools import QueryInventoryTool
+from src.orchestration_agent.tools.query_tools import POCreationTool
 
 load_dotenv()
 
