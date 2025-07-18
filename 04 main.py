@@ -9,7 +9,7 @@ from src.utils.intent import Intent
 
 from src.orchestration_agent.crews.orchestrator_flow.Purchasing_Agent import CrewInvAgent
 from src.orchestration_agent.crews.orchestrator_flow.Supplier_Selection_Agent import CrewSrcAgent
-from src.orchestration_agent.crews.orchestrator_flow.nventory_Analyst import CrewQryAgent
+from src.orchestration_agent.crews.orchestrator_flow.Inventory_Analyst import CrewQryAgent
 
 
 class OrchState(BaseModel):
