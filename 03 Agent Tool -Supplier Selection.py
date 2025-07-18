@@ -30,12 +30,12 @@ class SupplierRecommendationTool(BaseTool):
             # Build user query in reference with conversation history
             updated_query = build_prompt_with_context(convo_summary,user_query)
             
-            # Write logic here- start RAG processing
+            # Write logic here
 
             # Getting Similar Searches and response for query
             result = similarity_search(updated_query,"supplier_collection")
 
-            print("Response from Supplier RAG:",result)
+            print("Response from Supplier Knowledge Graph:",result)
             return result
 
         except Exception as e:
